@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+body {
+    height: 106vh;
+    overflow-y: scroll;
+}
+
+@layer components {
+    .wb-header-item {
+        @apply hover:underline text-gray-800 font-medium
+    }
+
+    .wb-header-icon1 {
+        @apply bg-transparent rounded-full hover:bg-gray-100 p-2 -ml-0.5
+    }
+
+    .wb-header-icon2 {
+        @apply bg-transparent rounded-full hover:bg-gray-100 p-2 -ml-3
+    }
+
+    .wb-header-img {
+        @apply size-10 rounded-full overflow-hidden -ml-0.5
+    }
+
+    .wb-input-box {
+        @apply pl-13 py-3.5 w-full bg-white rounded-full font-medium text-[17px] placeholder-gray-500 outline-none
+    }
+
+    .ai-button {
+        @apply absolute top-2.5 right-2.75 rounded-full pl-2.5 pr-3.5 py-1 bg-gray-100 text-gray-700 font-medium flex gap-1 border border-transparent transition-all duration-400 hover:bg-[#f1f3f4] hover:shadow-md hover:border-[#dadce0]
+    }
+
+    .flex-wrapper {
+        @apply flex items-center xl:justify-between justify-center flex-wrap xl:flex-nowrap
+    }
+
+    .item-wrapper {
+        @apply w-[45%] sm:w-[24%] md:w-[20%] lg:w-[15%] xl:w-[11%] bg-transparent rounded-md p-4 text-center relative hover:bg-gray-200 transition duration-300 border-transparent border-2 focus:border-blue-500
+    }
+
+    .app-box {
+        @apply size-14 bg-gray-300 rounded-full overflow-hidden flex justify-center items-center aspect-square p-3.5 mx-auto
+    }
+
+    .icon-more {
+        @apply hidden group-hover:block absolute top-1 right-1 bg-transparent hover:bg-gray-300 rounded-full size-8 px-1.25 py-1 transition duration-200
+    }
+
+    .tabs-wrapper {
+        @apply xl:w-[54%] lg:w-[80%] w-[90%] mx-auto bg-blue-50 rounded-xl p-2 mt-8 
+    }
+
+    .fixed-box {
+        @apply w-44 fixed right-5 bottom-4 bg-[#d3e3fd] hover:bg-[#ccdaf2] rounded-full shadow-md px-4 py-1.5
+    }
+}
+
+@layer utilities {
+    .custom-shadow {
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.20);
+    }
+
+    .wb-filter {
+        filter: invert(1);
+    }
+
+}
