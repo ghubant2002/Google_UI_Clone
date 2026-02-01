@@ -7,7 +7,7 @@ body {
 
 @layer components {
     .wb-header-item {
-        @apply hover:underline text-gray-800 font-medium
+        @apply hover:underline text-gray-800
     }
 
     .wb-header-icon1 {
@@ -23,11 +23,11 @@ body {
     }
 
     .wb-input-box {
-        @apply pl-13 py-3.5 w-full bg-white rounded-full font-medium text-[17px] placeholder-gray-500 outline-none
+        @apply pl-13 py-3.5 w-full bg-white rounded-full text-[17px] placeholder-gray-500 outline-none
     }
 
     .ai-button {
-        @apply absolute top-2.5 right-2.75 rounded-full pl-2.5 pr-3.5 py-1 bg-gray-100 text-gray-700 font-medium flex gap-1 border border-transparent transition-all duration-400 hover:bg-[#f1f3f4] hover:shadow-md hover:border-[#dadce0]
+        @apply absolute top-2.5 right-2.75 rounded-full pl-2.5 pr-3.5 py-1 bg-gray-100 text-gray-700 flex gap-1 border border-transparent transition-all duration-400 hover:bg-[#f1f3f4] hover:shadow-md hover:border-[#dadce0]
     }
 
     .flex-wrapper {
@@ -35,7 +35,7 @@ body {
     }
 
     .item-wrapper {
-        @apply w-[45%] sm:w-[24%] md:w-[20%] lg:w-[15%] xl:w-[11%] bg-transparent rounded-md p-4 text-center relative hover:bg-gray-200 transition duration-300 border-transparent border-2 focus:border-blue-500
+        @apply w-[45%] sm:w-[24%] md:w-[20%] lg:w-[15%] xl:w-[13%] bg-transparent rounded-md p-4 text-center relative hover:bg-gray-200 transition duration-300 border-transparent border-2 focus:border-blue-500
     }
 
     .app-box {
