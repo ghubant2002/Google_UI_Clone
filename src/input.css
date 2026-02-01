@@ -35,7 +35,7 @@ body {
     }
 
     .item-wrapper {
-        @apply w-[45%] sm:w-[24%] md:w-[20%] lg:w-[15%] xl:w-[13%] bg-transparent rounded-md p-4 text-center relative hover:bg-gray-200 transition duration-300 border-transparent border-2 focus:border-blue-500
+        @apply w-[45%] sm:w-[24%] md:w-[20%] lg:w-[15%] xl:w-[16%] bg-transparent rounded-md p-4 text-center relative hover:bg-gray-200 transition duration-300 border-transparent border-2 focus:border-blue-500
     }
 
     .app-box {
