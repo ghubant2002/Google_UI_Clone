@@ -644,7 +644,7 @@ body {
       width: 15%;
     }
     @media (width >= 80rem) {
-      width: 16%;
+      width: 20%;
     }
   }
   .app-box {
