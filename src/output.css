@@ -193,9 +193,6 @@
   .static {
     position: static;
   }
-  .top-3 {
-    top: calc(var(--spacing) * 3);
-  }
   .top-3\.75 {
     top: calc(var(--spacing) * 3.75);
   }
@@ -207,9 +204,6 @@
   }
   .right-46 {
     right: calc(var(--spacing) * 46);
-  }
-  .left-4 {
-    left: calc(var(--spacing) * 4);
   }
   .left-4\.5 {
     left: calc(var(--spacing) * 4.5);
@@ -253,9 +247,6 @@
   .hidden {
     display: none;
   }
-  .table {
-    display: table;
-  }
   .size-13 {
     width: calc(var(--spacing) * 13);
     height: calc(var(--spacing) * 13);
@@ -290,12 +281,6 @@
   .w-xs {
     width: var(--container-xs);
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
-  }
   .flex-wrap {
     flex-wrap: wrap;
   }
@@ -317,9 +302,6 @@
   .gap-3 {
     gap: calc(var(--spacing) * 3);
   }
-  .gap-4 {
-    gap: calc(var(--spacing) * 4);
-  }
   .gap-4\.5 {
     gap: calc(var(--spacing) * 4.5);
   }
@@ -335,10 +317,6 @@
   .rounded-md {
     border-radius: var(--radius-md);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
   }
@@ -347,9 +325,6 @@
   }
   .bg-white {
     background-color: var(--color-white);
-  }
-  .p-1 {
-    padding: calc(var(--spacing) * 1);
   }
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
@@ -375,17 +350,11 @@
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
-  .pt-0 {
-    padding-top: calc(var(--spacing) * 0);
-  }
   .pt-0\.25 {
     padding-top: calc(var(--spacing) * 0.25);
   }
   .pt-0\.75 {
     padding-top: calc(var(--spacing) * 0.75);
-  }
-  .pt-1 {
-    padding-top: calc(var(--spacing) * 1);
   }
   .pt-1\.5 {
     padding-top: calc(var(--spacing) * 1.5);
@@ -411,20 +380,11 @@
   .pb-0 {
     padding-bottom: calc(var(--spacing) * 0);
   }
-  .pb-0\.25 {
-    padding-bottom: calc(var(--spacing) * 0.25);
-  }
-  .pb-2 {
-    padding-bottom: calc(var(--spacing) * 2);
-  }
   .pb-2\.5 {
     padding-bottom: calc(var(--spacing) * 2.5);
   }
   .pb-px {
     padding-bottom: 1px;
-  }
-  .pl-2 {
-    padding-left: calc(var(--spacing) * 2);
   }
   .pl-2\.75 {
     padding-left: calc(var(--spacing) * 2.75);
@@ -444,10 +404,6 @@
   .text-\[15px\] {
     font-size: 15px;
   }
-  .font-medium {
-    --tw-font-weight: var(--font-weight-medium);
-    font-weight: var(--font-weight-medium);
-  }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
@@ -466,13 +422,6 @@
   }
   .text-gray-700 {
     color: var(--color-gray-700);
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
@@ -770,19 +719,9 @@ body {
     filter: invert(1);
   }
 }
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }
 @property --tw-blur {
   syntax: "*";
@@ -836,6 +775,11 @@ body {
 @property --tw-drop-shadow-size {
   syntax: "*";
   inherits: false;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
 @property --tw-duration {
   syntax: "*";
@@ -909,9 +853,7 @@ body {
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
@@ -925,6 +867,7 @@ body {
       --tw-drop-shadow-color: initial;
       --tw-drop-shadow-alpha: 100%;
       --tw-drop-shadow-size: initial;
+      --tw-border-style: solid;
       --tw-duration: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
